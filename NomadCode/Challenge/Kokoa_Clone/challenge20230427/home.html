@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create An Account</h1>
+    <form>
+        <div>
+            <label for="First name">First name</label>
+            <input id="First name" required placeholder="First name" type="text" />
+        </div>
+
+        <div>
+            <label for="Email">Email</label>
+            <input id="Email" required placeholder="Email" type="email" />
+        </div>
+
+        <div>
+            <label for="User">Username</label>
+            <input id="User" required placeholder="Username" type="text" />
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input required placeholder="Password" minlength="10" type="password" />
+        </div>
+        
+        <div>
+            <label>Birth date</label>
+            <input required type="date" />
+        </div>
+        
+        <div>
+            <label>How happy are you?</label>
+            <input type="range" min="0" max="50" list="marks" />
+                <datalist id="marks">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                </datalist>
+        </div>
+        
+        <div>
+            <label>What is your fav.color?</label>
+            <input type="color" />
+        </div>    
+
+        <input type="submit" value="Create Account" />
+    </form>
+</body>
+</html>
